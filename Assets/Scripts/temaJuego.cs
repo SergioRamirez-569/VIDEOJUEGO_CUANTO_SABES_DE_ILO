@@ -18,7 +18,7 @@ public class temaJuego : MonoBehaviour
     public string[] nombreTema;
 
     private int idTema;
-    // Start is called before the first frame update
+
     void Start()
     {
         idTema = 0;
@@ -41,7 +41,6 @@ public class temaJuego : MonoBehaviour
     {
         SceneManager.LoadScene("T"+idTema);
     }
-    // Update is called once per frame
     void Update()
     {
         
