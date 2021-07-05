@@ -15,11 +15,11 @@ E:/PROYECTOS_UNITY/VIDEOJUEGO_CUANTO_SABES_DE_ILO
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58054
+49474
 Successfully changed project path to: E:/PROYECTOS_UNITY/VIDEOJUEGO_CUANTO_SABES_DE_ILO
 E:/PROYECTOS_UNITY/VIDEOJUEGO_CUANTO_SABES_DE_ILO
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 39.58 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 59.40 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.5f1 (8095aa901b9b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -35,117 +35,165 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56404
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56292
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003816 seconds.
+Registered in 0.003264 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 38.19 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 50.57 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.069 seconds
+- Completed reload, in  2.531 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000824 seconds.
+Registered in 0.001064 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 41.31 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 38.28 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.049 seconds
+- Completed reload, in  1.087 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 84.9 MB.
-System memory in use after: 85.0 MB.
+System memory in use before: 85.0 MB.
+System memory in use after: 85.1 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2258.
-Total: 2.765900 ms (FindLiveObjects: 0.217500 ms CreateObjectMapping: 0.266000 ms MarkObjects: 2.210200 ms  DeleteObjects: 0.070300 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scenes
-  artifactKey: Guid(08f670e40cd21af4ab3bdef9778c0854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(08f670e40cd21af4ab3bdef9778c0854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e9cdbcbd69dd5880cc843008ed7543c') in 0.004410 seconds
-  Import took 0.007561 seconds .
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2260.
+Total: 2.216100 ms (FindLiveObjects: 0.229500 ms CreateObjectMapping: 0.140500 ms MarkObjects: 1.764500 ms  DeleteObjects: 0.080500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000352 seconds.
+  path: Assets/Images/unamoquegua 1.png
+  artifactKey: Guid(49a91116eacf3f046ba79a38ca8a229b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/unamoquegua 1.png using Guid(49a91116eacf3f046ba79a38ca8a229b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed74da67d86c73f60e118b92038259da') in 0.131477 seconds
+  Import took 0.134975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 538.666439 seconds.
+  path: Assets/Scenes/notaFinal.unity
+  artifactKey: Guid(8944c33986890a9478b72ad465902c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/notaFinal.unity using Guid(8944c33986890a9478b72ad465902c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '251990fa93fab5dcbe66bd7b82c1bcf3') in 0.003007 seconds
+  Import took 0.006639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012033 seconds.
+  path: Assets/Scenes/notaFinal.unity
+  artifactKey: Guid(8944c33986890a9478b72ad465902c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/notaFinal.unity using Guid(8944c33986890a9478b72ad465902c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '251990fa93fab5dcbe66bd7b82c1bcf3') in 0.002083 seconds
+  Import took 0.006824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 113.350238 seconds.
+  path: Assets/Scenes/T1.unity
+  artifactKey: Guid(aee654c1cde2ca84990bdb2960937b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/T1.unity using Guid(aee654c1cde2ca84990bdb2960937b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ffc5258899474fd71db9575cb54aa46') in 0.002923 seconds
+  Import took 0.009062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.873089 seconds.
+  path: Assets/Scenes/notaFinal.unity
+  artifactKey: Guid(8944c33986890a9478b72ad465902c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/notaFinal.unity using Guid(8944c33986890a9478b72ad465902c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0282305a70233fbe8c3826ef4550791') in 0.001969 seconds
+  Import took 0.006258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.564597 seconds.
   path: Assets/Scenes/SampleScene.unity
   artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e8f02ad6e5f31308913303e2d877b3') in 0.010857 seconds
-  Import took 0.014253 seconds .
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f29026b4957e625e51c7513f8a4840') in 0.002331 seconds
+  Import took 0.006059 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 37.651338 seconds.
-  path: Assets/Images/background.png
-  artifactKey: Guid(3d91674a5c70b094a889321fe7abc7ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/background.png using Guid(3d91674a5c70b094a889321fe7abc7ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca65151319decaefcaba531795da2c1') in 0.121486 seconds
-  Import took 0.125136 seconds .
+  Time since last request: 5.341866 seconds.
+  path: Assets/Scenes/temas.unity
+  artifactKey: Guid(d6cda3296ecd47548afd445d11a3c557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/temas.unity using Guid(d6cda3296ecd47548afd445d11a3c557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded281b4050d132abed4dc93048a16f9') in 0.002054 seconds
+  Import took 0.005913 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000338 seconds.
-  path: Assets/Images/HUD.png
-  artifactKey: Guid(178d39ba86d80074caf345502f00ad4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/HUD.png using Guid(178d39ba86d80074caf345502f00ad4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ace260582987b76d526f2e7a9f2f3d') in 0.190415 seconds
-  Import took 0.193570 seconds .
+  Time since last request: 193.960960 seconds.
+  path: Assets/Scenes/temas.unity
+  artifactKey: Guid(d6cda3296ecd47548afd445d11a3c557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/temas.unity using Guid(d6cda3296ecd47548afd445d11a3c557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5499fccc73825867631309934fc590fa') in 0.007301 seconds
+  Import took 0.011862 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Images/unamoquegua.png
-  artifactKey: Guid(4dc45f99aadd36d4388d07eeb0a7787f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/unamoquegua.png using Guid(4dc45f99aadd36d4388d07eeb0a7787f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd530efbb3b7d48f912a30c71dd244a') in 0.010895 seconds
-  Import took 0.014063 seconds .
+  Time since last request: 175.667832 seconds.
+  path: Assets/Scripts/moveOffset.cs
+  artifactKey: Guid(cb128c34c51be5448ae43379eb74aa93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/moveOffset.cs using Guid(cb128c34c51be5448ae43379eb74aa93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b42fced65c7c7cff147c20992f350339') in 0.003961 seconds
+  Import took 0.009556 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 18.448289 seconds.
-  path: Assets/Images/unamoquegua 1.png
-  artifactKey: Guid(49a91116eacf3f046ba79a38ca8a229b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/unamoquegua 1.png using Guid(49a91116eacf3f046ba79a38ca8a229b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e42c45e73c6c0aa3fa0796ef3437638d') in 0.040977 seconds
-  Import took 0.045131 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000804 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.957 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1805 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.6 MB.
+System memory in use after: 87.7 MB.
 
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2270.
+Total: 3.464200 ms (FindLiveObjects: 0.370100 ms CreateObjectMapping: 0.154200 ms MarkObjects: 2.916300 ms  DeleteObjects: 0.021800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Import Request.
-  Time since last request: 1092.558565 seconds.
-  path: Assets/Images
-  artifactKey: Guid(99a82de67dd879345817177cb550fce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images using Guid(99a82de67dd879345817177cb550fce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88fff144cba7644bba30f46544766f1b') in 0.001932 seconds
-  Import took 0.007914 seconds .
+  Time since last request: 498.166952 seconds.
+  path: Assets/Materiales/Escenario.mat
+  artifactKey: Guid(473057fafb1a41c448d54ae2124a4409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materiales/Escenario.mat using Guid(473057fafb1a41c448d54ae2124a4409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f3e277b868fb4a3e18db431ea76b6d7') in 0.166043 seconds
+  Import took 0.170132 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 10.650116 seconds.
-  path: Assets/Images/unamoquegua 1.png
-  artifactKey: Guid(49a91116eacf3f046ba79a38ca8a229b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/unamoquegua 1.png using Guid(49a91116eacf3f046ba79a38ca8a229b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '104e95c854a94d3437e93d781a97e073') in 0.072338 seconds
-  Import took 0.076612 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000877 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.040 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1805 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.8 MB.
+System memory in use after: 88.0 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 77.910005 seconds.
-  path: Assets/Images/unamoquegua 1.png
-  artifactKey: Guid(49a91116eacf3f046ba79a38ca8a229b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/unamoquegua 1.png using Guid(49a91116eacf3f046ba79a38ca8a229b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '314f60881792df941b940ccb28c3b3a6') in 0.011535 seconds
-  Import took 0.015507 seconds .
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2312.
+Total: 2.060900 ms (FindLiveObjects: 0.200800 ms CreateObjectMapping: 0.066900 ms MarkObjects: 1.775700 ms  DeleteObjects: 0.016400 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.031146 seconds.
-  path: Assets/Images/unamoquegua 1.png
-  artifactKey: Guid(49a91116eacf3f046ba79a38ca8a229b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/unamoquegua 1.png using Guid(49a91116eacf3f046ba79a38ca8a229b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '314f60881792df941b940ccb28c3b3a6') in 0.010698 seconds
-  Import took 0.015015 seconds .
-
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
