@@ -17,6 +17,8 @@ public class temaJuego : MonoBehaviour
 
     public string[] nombreTema;
 
+    public int numeroQuiz;
+
     private int idTema;
 
     void Start()
@@ -34,12 +36,15 @@ public class temaJuego : MonoBehaviour
     {
         idTema = i;
         txtNombreTema.text = nombreTema[i];
+            int notaFinal=0;
+            int aciertos=0;
+        txtInfoLevel.text = "USTED ACERTO "+ aciertos.ToString() +" DE "+ numeroQuiz.ToString() +" PREGUNTAS!";
         infoLevel.SetActive(true);
         btnPlay.interactable=true;
     }
     public void jugar()
     {
-        SceneManager.LoadScene("T"+idTema);
+        SceneManager.LoadScene("T"+idTema.ToString());
     }
     void Update()
     {
