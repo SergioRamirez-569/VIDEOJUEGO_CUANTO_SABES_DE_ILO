@@ -9,4 +9,8 @@ public class Comandos : MonoBehaviour
     {
         SceneManager.LoadScene(nombreEscena);
     }
+    public void resetearPuntuacion()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }

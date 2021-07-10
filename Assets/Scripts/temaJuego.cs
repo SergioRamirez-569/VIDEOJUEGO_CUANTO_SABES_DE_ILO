@@ -35,9 +35,35 @@ public class temaJuego : MonoBehaviour
     public void seleccionTema(int i)
     {
         idTema = i;
+        PlayerPrefs.SetInt("idTema", idTema);
         txtNombreTema.text = nombreTema[i];
-            int notaFinal=0;
-            int aciertos=0;
+        int notaFinal = PlayerPrefs.GetInt("notaFinal" + idTema.ToString());
+        int aciertos = PlayerPrefs.GetInt("aciertos" + idTema.ToString());
+
+        estrella1.SetActive(false);
+        estrella2.SetActive(false);
+        estrella3.SetActive(false);
+
+        if (notaFinal == 10)
+        {
+            estrella1.SetActive(true);
+            estrella2.SetActive(true);
+            estrella3.SetActive(true);
+        }
+        else if (notaFinal >= 7)
+        {
+            estrella1.SetActive(true);
+            estrella2.SetActive(true);
+            estrella3.SetActive(false);
+        }
+        else if (notaFinal >= 5)
+        {
+            estrella1.SetActive(true);
+            estrella2.SetActive(false);
+            estrella3.SetActive(false);
+        }
+
+
         txtInfoLevel.text = "USTED ACERTO "+ aciertos.ToString() +" DE "+ numeroQuiz.ToString() +" PREGUNTAS!";
         infoLevel.SetActive(true);
         btnPlay.interactable=true;

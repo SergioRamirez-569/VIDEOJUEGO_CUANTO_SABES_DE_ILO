@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Responder : MonoBehaviour
 {
-    public int idTema;
+    private int idTema;
 
     public Text pregunta;
     public Text respuestaA;
@@ -27,9 +27,11 @@ public class Responder : MonoBehaviour
     private float aciertos;
     private float questions;
     private float media;
+    private int notaFinal; 
     // Start is called before the first frame update
     void Start()
     {
+        idTema = PlayerPrefs.GetInt("idTema");
         idPregunta = 0;
         questions = preguntas.Length;
 
@@ -92,6 +94,18 @@ public class Responder : MonoBehaviour
         }
         else
         {
+
+            media = 10 * (aciertos / questions);
+            notaFinal = Mathf.RoundToInt(media);
+
+            if (notaFinal > PlayerPrefs.GetInt("notaFinal" + idTema.ToString()))
+            {
+                PlayerPrefs.SetInt("notaFinal" + idTema.ToString(), notaFinal);
+                PlayerPrefs.SetInt("aciertos" + idTema.ToString(), (int) aciertos);
+            }
+            PlayerPrefs.SetInt("notaFinalTemp" + idTema.ToString(), notaFinal);
+            PlayerPrefs.SetInt("aciertosTemp" + idTema.ToString(), (int)aciertos);
+
             SceneManager.LoadScene("notaFinal");
         }
     }

@@ -1,44 +1,66 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class temaInfo : MonoBehaviour
+public class notaFinal : MonoBehaviour
 {
-    public int idTema;
+
+    private int idTema;
+
+    public Text txtNota;
+    public Text txtInfoLevel;
+
     public GameObject estrella1;
     public GameObject estrella2;
     public GameObject estrella3;
 
-    private int notaFinal;
+    private int notaF;
+    private int aciertos;
+
     // Start is called before the first frame update
     void Start()
     {
+        idTema = PlayerPrefs.GetInt("idTema");
+
         estrella1.SetActive(false);
         estrella2.SetActive(false);
         estrella3.SetActive(false);
 
-        int notaFinal = PlayerPrefs.GetInt("notaFinal" + idTema.ToString());
+        
+        notaF = PlayerPrefs.GetInt("notaFinalTemp" + idTema.ToString());
+        aciertos = PlayerPrefs.GetInt("aciertosTemp" + idTema.ToString());
 
+        txtNota.text = notaF.ToString();
+        txtInfoLevel.text = "USTED ACERTO " + aciertos.ToString() + " de 20 preguntas";
 
-        if (notaFinal == 10)
+        if (notaF == 10)
         {
             estrella1.SetActive(true);
             estrella2.SetActive(true);
             estrella3.SetActive(true);
         }
-        else if (notaFinal >= 7)
+        else if (notaF >= 7)
         {
             estrella1.SetActive(true);
             estrella2.SetActive(true);
             estrella3.SetActive(false);
         }
-        else if (notaFinal >= 5)
+        else if (notaF >= 5)
         {
             estrella1.SetActive(true);
             estrella2.SetActive(false);
             estrella3.SetActive(false);
         }
+
     }
+
+    public void jugarNuevamente()
+    {
+        SceneManager.LoadScene("T" + idTema.ToString());
+    }
+
 
     // Update is called once per frame
     void Update()
