@@ -1,12 +1,14 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Random = System.Random;
 
 public class Responder : MonoBehaviour
 {
     private int idTema;
+    private int notaFinal;
 
     public Text pregunta;
     public Text respuestaA;
@@ -15,64 +17,84 @@ public class Responder : MonoBehaviour
     public Text respuestaD;
     public Text infoRespuesta;
 
-    public string[] preguntas;
-    public string[] alternativasA;
-    public string[] alternativasB;
-    public string[] alternativasC;
-    public string[] alternativasD;
-    public string[] correctas;
+    public List<string> preguntas;
+    public List<string> alternativasA;
+    public List<string> alternativasB;
+    public List<string> alternativasC;
+    public List<string> alternativasD;
+    public List<string> correctas;
 
+
+    public List<int> nPreguntas;
+    public List<List<String>> nRespuestas = new List<List<string>>();
     private int idPregunta;
-
+    
     private float aciertos;
     private float questions;
     private float media;
-    private int notaFinal; 
+
     // Start is called before the first frame update
     void Start()
     {
         idTema = PlayerPrefs.GetInt("idTema");
-        idPregunta = 0;
-        questions = preguntas.Length;
-
-        pregunta.text = preguntas[idPregunta];
-        respuestaA.text = alternativasA[idPregunta];
-        respuestaB.text = alternativasB[idPregunta];
-        respuestaC.text = alternativasC[idPregunta];
-        respuestaD.text = alternativasD[idPregunta];
-
-        infoRespuesta.text = "RESPONDIENDO " + (idPregunta + 1).ToString() + " DE " + questions.ToString() + " PREGUNTAS";
+        idPregunta = -1;
+        questions = preguntas.Count;
+        for (int i = 0; i < questions; i++)
+        {
+            nPreguntas.Add(i);
+        }
+        nRespuestas.Add(alternativasA);
+        nRespuestas.Add(alternativasB);
+        nRespuestas.Add(alternativasC);
+        nRespuestas.Add(alternativasD);
+        Shuffle(nPreguntas);
+        Shuffle(nRespuestas);
+        proximaPregunta();
+    }
+    static void Shuffle<T>(List<T> list)
+    {
+        Random rng = new Random();
+        int n = list.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = rng.Next(n + 1);
+            T value = list[k];
+            list[k] = list[n];
+            list[n] = value;
+        }
     }
 
     public void respuesta(string alternativa)
     {
         if (alternativa == "A")
         {
-            if (alternativasA[idPregunta] == correctas[idPregunta])
+            if (alternativasA[nPreguntas[idPregunta]] == correctas[nPreguntas[idPregunta]])
             {
                 aciertos += 1;
             }
         }
         else if (alternativa == "B")
         {
-            if (alternativasB[idPregunta] == correctas[idPregunta])
+            if (alternativasB[nPreguntas[idPregunta]] == correctas[nPreguntas[idPregunta]])
             {
                 aciertos += 1;
             }
         }
         else if (alternativa == "C")
         {
-            if (alternativasC[idPregunta] == correctas[idPregunta])
+            if (alternativasC[nPreguntas[idPregunta]] == correctas[nPreguntas[idPregunta]])
             {
                 aciertos += 1;
             }
         }
         else if (alternativa == "D")
         {
-            if (alternativasD[idPregunta] == correctas[idPregunta])
+            if (alternativasD[nPreguntas[idPregunta]] == correctas[nPreguntas[idPregunta]])
             {
                 aciertos += 1;
             }
+
         }
 
         proximaPregunta();
@@ -84,13 +106,17 @@ public class Responder : MonoBehaviour
 
         if (idPregunta <= (questions - 1))
         {
-        pregunta.text = preguntas[idPregunta];
-        respuestaA.text = alternativasA[idPregunta];
-        respuestaB.text = alternativasB[idPregunta];
-        respuestaC.text = alternativasC[idPregunta];
-        respuestaD.text = alternativasD[idPregunta];
+            alternativasA = nRespuestas[0];
+            alternativasB = nRespuestas[1];
+            alternativasC = nRespuestas[2];
+            alternativasD = nRespuestas[3];
+            pregunta.text = preguntas[nPreguntas[idPregunta]];
+            respuestaA.text = alternativasA[nPreguntas[idPregunta]];
+            respuestaB.text = alternativasB[nPreguntas[idPregunta]];
+            respuestaC.text = alternativasC[nPreguntas[idPregunta]];
+            respuestaD.text = alternativasD[nPreguntas[idPregunta]];
 
-        infoRespuesta.text = "RESPONDIENDO " + (idPregunta + 1).ToString() + " DE " + questions.ToString() + " PREGUNTAS";
+            infoRespuesta.text = "RESPONDIENDO " + (idPregunta + 1).ToString() + " DE " + questions.ToString() + " PREGUNTAS";
         }
         else
         {
