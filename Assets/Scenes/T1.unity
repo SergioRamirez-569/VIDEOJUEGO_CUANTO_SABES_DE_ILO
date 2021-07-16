@@ -696,7 +696,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 2.45, y: -1022}
+  m_AnchoredPosition: {x: 0, y: -1045}
   m_SizeDelta: {x: 626.09, y: 144.48999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1414163120
@@ -831,21 +831,28 @@ MonoBehaviour:
   preguntas:
   - "\xBFCUANDO SE FUNDO ILO?"
   - CUAL ES UN PLATO TIPICO
+  - "\xBFEN QUE A\xD1O FUE PROPUESTO EL ESCUDO?"
   alternativasA:
   - 1555
   - CUY
+  - 1976
   alternativasB:
   - 1548
   - POLLO
+  - 1986
   alternativasC:
   - 1402
   - CEVICHE
+  - 1876
   alternativasD:
   - 1111
   - ARROZ
+  - 1966
   correctas:
   - 1548
   - CEVICHE
+  - 1976
+  nPreguntas: 
 --- !u!4 &1457556335
 Transform:
   m_ObjectHideFlags: 0
@@ -893,7 +900,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -122}
+  m_AnchoredPosition: {x: 0, y: -161}
   m_SizeDelta: {x: 6.35, y: 1.4699707}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1650427610
@@ -1116,7 +1123,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 2.45, y: -599}
+  m_AnchoredPosition: {x: -0.01001, y: -605}
   m_SizeDelta: {x: 626.09, y: 144.48999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1763323639
@@ -1249,7 +1256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 2.45, y: -808}
+  m_AnchoredPosition: {x: 2.45, y: -829}
   m_SizeDelta: {x: 626.09, y: 144.48999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811796417
@@ -1446,7 +1453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.01, y: -125.119995}
+  m_AnchoredPosition: {x: -0.01, y: -164.12003}
   m_SizeDelta: {x: 699.02, y: 124.53003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1917031194

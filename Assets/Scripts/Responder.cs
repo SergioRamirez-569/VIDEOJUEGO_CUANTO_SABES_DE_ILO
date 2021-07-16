@@ -28,7 +28,6 @@ public class Responder : MonoBehaviour
     public List<int> nPreguntas;
     public List<List<String>> nRespuestas = new List<List<string>>();
     private int idPregunta;
-    
     private float aciertos;
     private float questions;
     private float media;
