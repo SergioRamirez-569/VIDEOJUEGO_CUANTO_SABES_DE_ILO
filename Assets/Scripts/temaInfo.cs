@@ -9,6 +9,8 @@ public class temaInfo : MonoBehaviour
     public GameObject estrella2;
     public GameObject estrella3;
 
+    public int[] puntajeEstrellas;
+
     private int notaFinal;
     // Start is called before the first frame update
     void Start()
@@ -20,19 +22,19 @@ public class temaInfo : MonoBehaviour
         int notaFinal = PlayerPrefs.GetInt("notaFinal" + idTema.ToString());
 
 
-        if (notaFinal == 10)
+        if (notaFinal == puntajeEstrellas[0])
         {
             estrella1.SetActive(true);
             estrella2.SetActive(true);
             estrella3.SetActive(true);
         }
-        else if (notaFinal >= 7)
+        else if (notaFinal >= puntajeEstrellas[1])
         {
             estrella1.SetActive(true);
             estrella2.SetActive(true);
             estrella3.SetActive(false);
         }
-        else if (notaFinal >= 5)
+        else if (notaFinal >= puntajeEstrellas[2])
         {
             estrella1.SetActive(true);
             estrella2.SetActive(false);

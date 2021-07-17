@@ -831,21 +831,34 @@ MonoBehaviour:
   preguntas:
   - "\xBFCUANDO SE FUNDO ILO?"
   - CUAL ES UN PLATO TIPICO
+  - PROBANDO
+  - PROBANDO 2
   alternativasA:
   - 1555
   - CUY
+  - A
+  - 44
   alternativasB:
   - 1548
   - POLLO
+  - B
+  - 55
   alternativasC:
   - 1402
   - CEVICHE
+  - C
+  - 66
   alternativasD:
   - 1111
   - ARROZ
+  - D
+  - 77
   correctas:
   - 1548
   - CEVICHE
+  - C
+  - 66
+  nPreguntas: 
 --- !u!4 &1457556335
 Transform:
   m_ObjectHideFlags: 0

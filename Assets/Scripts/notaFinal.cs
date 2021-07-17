@@ -18,6 +18,8 @@ public class notaFinal : MonoBehaviour
 
     private int notaF;
     private int aciertos;
+    private int totalPregunta;
+    public int[] puntajeEstrellas;
 
     // Start is called before the first frame update
     void Start()
@@ -28,26 +30,26 @@ public class notaFinal : MonoBehaviour
         estrella2.SetActive(false);
         estrella3.SetActive(false);
 
-        
+        totalPregunta = PlayerPrefs.GetInt("totalPregunta" + idTema.ToString());
         notaF = PlayerPrefs.GetInt("notaFinalTemp" + idTema.ToString());
         aciertos = PlayerPrefs.GetInt("aciertosTemp" + idTema.ToString());
-
+        Debug.Log(notaF);
         txtNota.text = notaF.ToString();
-        txtInfoLevel.text = "USTED ACERTO " + aciertos.ToString() + " de 20 preguntas";
+        txtInfoLevel.text = "USTED ACERTO " + aciertos.ToString() + " de " + totalPregunta.ToString() + " preguntas";
 
-        if (notaF == 10)
+        if (notaF == puntajeEstrellas[0])
         {
             estrella1.SetActive(true);
             estrella2.SetActive(true);
             estrella3.SetActive(true);
         }
-        else if (notaF >= 7)
+        else if (notaF >= puntajeEstrellas[1])
         {
             estrella1.SetActive(true);
             estrella2.SetActive(true);
             estrella3.SetActive(false);
         }
-        else if (notaF >= 5)
+        else if (notaF >= puntajeEstrellas[2])
         {
             estrella1.SetActive(true);
             estrella2.SetActive(false);

@@ -16,10 +16,12 @@ public class temaJuego : MonoBehaviour
     public GameObject estrella3;
 
     public string[] nombreTema;
+    public int[] puntajeEstrellas;
 
     public int numeroQuiz;
 
     private int idTema;
+    private int totalPregunta;
 
     void Start()
     {
@@ -37,6 +39,7 @@ public class temaJuego : MonoBehaviour
         idTema = i;
         PlayerPrefs.SetInt("idTema", idTema);
         txtNombreTema.text = nombreTema[i];
+        totalPregunta = PlayerPrefs.GetInt("totalPregunta" + idTema.ToString());
         int notaFinal = PlayerPrefs.GetInt("notaFinal" + idTema.ToString());
         int aciertos = PlayerPrefs.GetInt("aciertos" + idTema.ToString());
 
@@ -44,19 +47,19 @@ public class temaJuego : MonoBehaviour
         estrella2.SetActive(false);
         estrella3.SetActive(false);
 
-        if (notaFinal == 10)
+        if (notaFinal == puntajeEstrellas[0])
         {
             estrella1.SetActive(true);
             estrella2.SetActive(true);
             estrella3.SetActive(true);
         }
-        else if (notaFinal >= 7)
+        else if (notaFinal >= puntajeEstrellas[1])
         {
             estrella1.SetActive(true);
             estrella2.SetActive(true);
             estrella3.SetActive(false);
         }
-        else if (notaFinal >= 5)
+        else if (notaFinal >= puntajeEstrellas[2])
         {
             estrella1.SetActive(true);
             estrella2.SetActive(false);
@@ -64,7 +67,7 @@ public class temaJuego : MonoBehaviour
         }
 
 
-        txtInfoLevel.text = "USTED ACERTO "+ aciertos.ToString() +" DE "+ numeroQuiz.ToString() +" PREGUNTAS!";
+        txtInfoLevel.text = "USTED ACERTO "+ aciertos.ToString() +" DE "+ totalPregunta.ToString() +" PREGUNTAS!";
         infoLevel.SetActive(true);
         btnPlay.interactable=true;
     }

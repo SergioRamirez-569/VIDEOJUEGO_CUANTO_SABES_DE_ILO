@@ -28,7 +28,8 @@ public class Responder : MonoBehaviour
     public List<int> nPreguntas;
     public List<List<String>> nRespuestas = new List<List<string>>();
     private int idPregunta;
-    
+
+
     private float aciertos;
     private float questions;
     private float media;
@@ -37,6 +38,9 @@ public class Responder : MonoBehaviour
     void Start()
     {
         idTema = PlayerPrefs.GetInt("idTema");
+        float totalPregunta = preguntas.Count;
+        Debug.Log(totalPregunta);
+        PlayerPrefs.SetInt("totalPregunta"+idTema.ToString(), (int) totalPregunta);
         idPregunta = -1;
         questions = preguntas.Count;
         for (int i = 0; i < questions; i++)
@@ -122,6 +126,7 @@ public class Responder : MonoBehaviour
         {
 
             media = 10 * (aciertos / questions);
+            Debug.Log(media);
             notaFinal = Mathf.RoundToInt(media);
 
             if (notaFinal > PlayerPrefs.GetInt("notaFinal" + idTema.ToString()))

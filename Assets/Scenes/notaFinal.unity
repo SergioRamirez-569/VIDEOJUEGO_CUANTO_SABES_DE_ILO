@@ -481,6 +481,7 @@ MonoBehaviour:
   estrella1: {fileID: 1354204155}
   estrella2: {fileID: 123257208}
   estrella3: {fileID: 1316605486}
+  puntajeEstrellas: 0a0000000700000005000000
 --- !u!1 &429487611
 GameObject:
   m_ObjectHideFlags: 0
