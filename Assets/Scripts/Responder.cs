@@ -39,7 +39,6 @@ public class Responder : MonoBehaviour
     {
         idTema = PlayerPrefs.GetInt("idTema");
         float totalPregunta = preguntas.Count;
-        Debug.Log(totalPregunta);
         PlayerPrefs.SetInt("totalPregunta"+idTema.ToString(), (int) totalPregunta);
         idPregunta = -1;
         questions = preguntas.Count;
