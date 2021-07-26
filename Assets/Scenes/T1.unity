@@ -833,31 +833,37 @@ MonoBehaviour:
   - CUAL ES UN PLATO TIPICO
   - PROBANDO
   - PROBANDO 2
+  - CUANDO NACIO ILO
   alternativasA:
   - 1555
   - CUY
   - A
   - 44
+  - 2012
   alternativasB:
   - 1548
   - POLLO
   - B
   - 55
+  - 2001
   alternativasC:
   - 1402
   - CEVICHE
   - C
   - 66
+  - 2003
   alternativasD:
   - 1111
   - ARROZ
   - D
   - 77
+  - 2005
   correctas:
   - 1548
   - CEVICHE
   - C
   - 66
+  - 2012
   nPreguntas: 
 --- !u!4 &1457556335
 Transform:
