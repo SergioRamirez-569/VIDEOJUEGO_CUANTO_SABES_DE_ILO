@@ -12,8 +12,7 @@ public class temaJuego : MonoBehaviour
     public GameObject infoLevel;
     public Text txtInfoLevel;
     public string[] nombreTema;
-    //public int[] puntajeEstrellas;
-    
+
     private int idTema;
     private int totalPregunta;
     Estrellas estrella;
