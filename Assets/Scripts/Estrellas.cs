@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class Estrellas : MonoBehaviour
 {
-    // Start is called before the first frame update
     public GameObject estrella1;
     public GameObject estrella2;
     public GameObject estrella3;
-    private int[] puntajeEstrellas = new int[] {10,7,5};
-
-    // Update is called once per frame
+    private int[] puntajeEstrellas = new int[3] {10,7,5};
+    
     public void cambio(int idTema)
     {
         int notaFinal = PlayerPrefs.GetInt("notaFinal" + idTema.ToString());
-        
+        //Activar las estrellas segun la nota
         if (notaFinal == puntajeEstrellas[0])
         {
             estrella1.SetActive(true);
